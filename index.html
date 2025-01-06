@@ -1,2 +1,93 @@
-# landing.github.io
-landing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Set the background to white */
+            text-align: left;
+        }
+        .container {
+            padding: 20px;
+            background: #ffffff; /* Set the container background to white */
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+        .error-title {
+            font-size: 20px;
+            color: #0078d4;
+            margin: 10px 0;
+        }
+        .instructions {
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        .details {
+            margin: 20px 0;
+            text-align: left;
+            font-size: 12px;
+            background: #f9f9f9; /* You can change this to white or keep it for contrast */
+            padding: 10px;
+            border-radius: 5px;
+            color: #555;
+            word-wrap: break-word;
+        }
+        .details p {
+            margin: 5px 0;
+            word-break: break-word;
+        }
+        .text-9xl {
+            font-size: 80px;
+            color: #0078d4;
+            text-align: left;
+            margin: 20px 0;
+        }
+        @media screen and (max-width: 600px) {
+            .error-title {
+                font-size: 16px;
+            }
+            .instructions {
+                font-size: 12px;
+            }
+            .refresh-button {
+                font-size: 12px;
+                padding: 10px;
+            }
+            .details {
+                font-size: 10px;
+                padding: 8px;
+            }
+            .text-9xl {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-9xl">:-(</div>
+        <h2 class="error-title">Something went wrong.</h2>
+        <p class="instructions">The server is busy and can't respond to your request. Please try again later.</p>
+        <div class="details">
+            <p><strong>X-ClientId:</strong> <span class="bg-black text-black">5245AD05A214A3D9BF9464BEA4821A8</span></p>
+            <p><strong>Session Id:</strong> 0d00e8a0-85f4-4a48-9237-5cbe86e3b5ef</p>
+            <p><strong>request-id:</strong> <span class="bg-black text-black">7f57c3e2-8dfb-4f3d-b2e0-8c0286b90c99</span></p>
+            <p><strong>X-OWA-Error:</strong> Microsoft.Exchange.Data.Directory.SystemConfiguration.OverBudgetException</p>
+            <p><strong>X-OWA-Version:</strong> 15.1.2308.20</p>
+            <p><strong>X-FEServer:</strong> <span class="bg-black text-black">FE01-EXCHANGE-SERVER</span></p>
+            <p><strong>ehk:</strong> X-OWA-Error</p>
+            <p><strong>emsg:</strong> ErrorUnexpectedFailure</p>
+        </div>
+    </div>
+</body>
+</html>
